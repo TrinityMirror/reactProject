@@ -1,16 +1,16 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import Logo from './components/Logo';
+// import Logo from './components/Logo';
 import styles from './components/style';
+import stySheet from './components/stySheet';
 
 const App = () => {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>no matter what we breed</Text>
-      <Text style={[styles.title,styles.warning]}>we still made of seed</Text>
-      <Logo/>
+    <View style={stySheet.container}>
+      <Text style={stySheet.title}>React Native</Text>
+      {/* <Logo/> */}
     </View>
-  )
-}
+  );
+};
 
-export default App
+export default App;
