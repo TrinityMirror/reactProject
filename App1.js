@@ -3,9 +3,9 @@ import React from 'react'
 import Logo from './components/Logo';
 import styles from './components/style';
 import stySheet from './components/stySheet';
-import Textinputexample from './textinputexample';
+import Textinputexample from './components/textinputexample';
 import Cat from './Cat';
-import Cafe from './Cafe';
+import Cafe from './components/Cafe';
 
 const App = () => {
 
