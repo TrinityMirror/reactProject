@@ -15,7 +15,7 @@ const App = () => {
      {/* <LotsOfGreetings/> */}
      {/* <MyCustomTextWth/> */}
      {/* <Count/> */}
-     {/* <InputText/> */}
+     <InputText/>
      <UsernameandPassword/>
     </View>
   )
