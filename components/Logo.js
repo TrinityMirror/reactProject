@@ -1,6 +1,5 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import textLogo from '../Textlogo'
 
 const Logo = () => {
   const textLogo = "Thai-Nichi";
