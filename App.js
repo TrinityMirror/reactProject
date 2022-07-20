@@ -8,10 +8,12 @@ import Count from './components/Count'
 import InputText from './components/InputText'
 import UsernameandPassword from './components/UsernameandPassWord'
 import UserNamePassword from './components/UserNamePassword'
+import AlertComponent from './components/AlertComponent'
+import ImageWithTextInput from './components/ImageWithTextInput'
 
 const App = () => {
   return (
-    <View>
+    <View style={{flex: 1}}>
      {/* <Logo/> */}
      {/* <User/> */}
      {/* <LotsOfGreetings/> */}
@@ -19,8 +21,9 @@ const App = () => {
      {/* <Count/> */}
      {/* <InputText/> */}
      {/* <UsernameandPassword/> */}
-     <UserNamePassword/>
-
+     {/* <UserNamePassword/> */}
+     {/* <AlertComponent/> */}
+     <ImageWithTextInput/>
     </View>
   )
 }

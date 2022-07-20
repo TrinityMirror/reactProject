@@ -24,12 +24,12 @@ const UserNamePassword = () => {
             <TextInput
                 style={styles.input}
                 placeholder='Enter Name'
-                onChangeText={(textInputName)=>(textInputName(textInputName))}
+                onChangeText={(textInputName)=>(settextInputName(textInputName))}
             />
             <TextInput
                 style={styles.input}
                 placeholder='Enter Email'
-                onChangeText={(textInputEmail)=>(textInputEmail(textInputEmail))}
+                onChangeText={(textInputEmail)=>(settextInputEmail(textInputEmail))}
             />
             <view style = {{flex:1,padding: 15}}>
             <Button
