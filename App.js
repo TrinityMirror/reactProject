@@ -7,6 +7,8 @@ import MyCustomTextWth from './components/MyCustomTextWth'
 import Count from './components/Count'
 import InputText from './components/InputText'
 import UsernameandPassword from './components/UsernameandPassWord'
+import UserNamePassword from './components/UserNamePassword'
+
 const App = () => {
   return (
     <View>
@@ -16,17 +18,35 @@ const App = () => {
      {/* <MyCustomTextWth/> */}
      {/* <Count/> */}
      {/* <InputText/> */}
-     <UsernameandPassword/>
+     {/* <UsernameandPassword/> */}
+     <UserNamePassword/>
+
     </View>
   )
 }
 
-export default App
+// const style = StyleSheet.create({
+//   container:{
+//     flex:1,
+//     justifyContent:'center',
+//     alignItems:'center'
+//   }
+// })
 
-const style = StyleSheet.create({
-  container:{
-    flex:1,
-    justifyContent:'center',
-    alignItems:'center'
-  }
-})
+export default App;
+
+const styles = StyleSheet.create({
+  container : {
+    flex: 1,
+    padding:35,
+  },
+  textInputStyle:{
+    width: '100%',
+    height: 40,
+    paddingHorizontal: 5,
+    borderWidth: 0.5,
+    marginTop: 15,
+    },
+  });
+
+
