@@ -22,13 +22,11 @@ const UserNamePassword = () => {
     return (
         <View>
             <TextInput
-                value={textInputName}
                 style={styles.input}
                 placeholder='Enter Name'
                 onChangeText={(textInputName)=>(textInputName(textInputName))}
             />
             <TextInput
-                value={textInputEmail}
                 style={styles.input}
                 placeholder='Enter Email'
                 onChangeText={(textInputEmail)=>(textInputEmail(textInputEmail))}
