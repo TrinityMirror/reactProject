@@ -10,6 +10,8 @@ import UsernameandPassword from './components/UsernameandPassWord'
 import UserNamePassword from './components/UserNamePassword'
 import AlertComponent from './components/AlertComponent'
 import ImageWithTextInput from './components/ImageWithTextInput'
+import ButtonExample from './components/ButtonExample'
+import TochableExamplae from './components/TochableExamplae'
 
 const App = () => {
   return (
@@ -23,7 +25,9 @@ const App = () => {
      {/* <UsernameandPassword/> */}
      {/* <UserNamePassword/> */}
      {/* <AlertComponent/> */}
-     <ImageWithTextInput/>
+     {/* <ImageWithTextInput/> */}
+     {/* <ButtonExample/> */}
+     <TochableExamplae/>
     </View>
   )
 }
