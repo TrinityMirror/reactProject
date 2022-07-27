@@ -49,7 +49,7 @@ const TochableExamplae = () => {
 
                 </View>
             </View>
-        </SafeAreaView >
+        </SafeAreaView>
     )
 }
 
