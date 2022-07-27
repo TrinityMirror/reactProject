@@ -12,30 +12,25 @@ const TouchablePractice = () => {
   return (
     <SafeAreaView style={{flex: 1}}>
     <View style={styles.container}>
-        <View style={styles.buttonFacebookStyle}>
+
+        <View>
+            <TouchableOpacity style={styles.buttonFacebookStyle} activeOpacity={0.5}>
             <Image
                 source={require('../assets/facebook.png')}
-                style={styles.buttonImageIconStyle}
-            />
-
+                style={styles.buttonImageIconStyle}/>
             <View style={styles.buttonIconSeparatorStyle}/>
-
-            <TouchableOpacity>
-                <Text style={styles.buttonTextStyle}>Login Using Facebook</Text>
+            <Text style={styles.buttonTextStyle}>Login Using Facebook</Text>
             </TouchableOpacity>
         </View>
 
 
-        <View style={styles.buttonGPlusStyle}>
+        <View>
+            <TouchableOpacity style={styles.buttonGPlusStyle} activeOpacity={0.5}>
             <Image
                 source={require('../assets/google-plus.png')}
-                style={styles.buttonImageIconStyle}
-            />
-
+                style={styles.buttonImageIconStyle}/>
             <View style={styles.buttonIconSeparatorStyle}/>
-
-            <TouchableOpacity>
-                <Text style={styles.buttonTextStyle}>Login Using Google Plus</Text>
+            <Text style={styles.buttonTextStyle}>Login Using Google Plus</Text>
             </TouchableOpacity>
         </View>
     </View>
