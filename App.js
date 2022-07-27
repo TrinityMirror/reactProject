@@ -13,6 +13,9 @@ import ImageWithTextInput from './components/ImageWithTextInput'
 import ButtonExample from './components/ButtonExample'
 import TochableExamplae from './components/TochableExamplae'
 import TouchablePractice from './components/TouchablePractice'
+import Dynamic from './components/Dynamic'
+import ModalExample from './components/ModalExample'
+import ModalPractice from './components/ModalPractice'
 
 const App = () => {
   return (
@@ -29,7 +32,10 @@ const App = () => {
      {/* <ImageWithTextInput/> */}
      {/* <ButtonExample/> */}
      {/* <TochableExamplae/> */}
-     <TouchablePractice/>
+     {/* <TouchablePractice/> */}
+     {/* <Dynamic/> */}
+     {/* <ModalExample/> */}
+     <ModalPractice/>
     </View>
   )
 }
