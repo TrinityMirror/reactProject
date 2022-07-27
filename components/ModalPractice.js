@@ -1,52 +1,53 @@
-import { 
+import {
     StyleSheet,
     Text,
     View,
     Modal,
     SafeAreaView,
     TouchableOpacity,
- } from 'react-native'
-import React, {useState} from 'react'
+} from 'react-native'
+import React, { useState } from 'react'
 
 const ModalPractice = () => {
 
-    const[showModal,setShowModal] = useState(false)
+    const [showModal, setShowModal] = useState(false)
 
-  return (
-    <SafeAreaView style={{flex:1}}>
-        <View  style={styles.centeredView}>
-            <Modal
-                animationType={'slide'}
-                transparent={false}
-                visible={showModal}
-                onRequestClose={()=>alert('Modal has been close')}
-                ><View  style={styles.centeredView}>
-                    <View style={styles.modalView}>
-                        <Text style={styles.modalText}>คุณลืมปิดไฟในห้อง!!!</Text>
+    return (
+        <SafeAreaView style={{ flex: 1 }}>
+            <View style={styles.centeredView}>
+                <Modal
+                    animationType={'slide'}
+                    transparent={false}
+                    visible={showModal}
+                    onRequestClose={() => alert('Modal has been close')}
+                >
+                    <View style={styles.centeredView}>
+                        <View style={styles.modalView}>
+                            <Text style={styles.modalText}>คุณลืมปิดไฟในห้อง!!!</Text>
 
-                        <TouchableOpacity 
-                        style={styles.buttonOpen}
-                        onPress={()=>setShowModal(!showModal)}
-                        >
-                        <Text style={styles.textStyle}>กรุณากดปุ่มเพื่อปิดไฟ</Text>
-                        
-                        </TouchableOpacity>
+                            <TouchableOpacity
+                                style={styles.buttonOpen}
+                                onPress={() => setShowModal(!showModal)}
+                            >
+                                <Text style={styles.textStyle}>กรุณากดปุ่มเพื่อปิดไฟ</Text>
+
+                            </TouchableOpacity>
+                        </View>
                     </View>
-                </View>
-            </Modal>
+                </Modal>
 
-                    <Text style={styles.modalText}>ไฟในห้องเปิดอยู่</Text>
+                <Text style={styles.modalText}>ไฟในห้องเปิดอยู่</Text>
 
-                    <TouchableOpacity 
+                <TouchableOpacity
                     style={styles.buttonClose}
-                    onPress={()=>setShowModal(!showModal)}
-                    >
+                    onPress={() => setShowModal(!showModal)}
+                >
                     <Text style={styles.textStyle}>กรุณากดปุ่มเพื่อเปิดไฟอีกครั้ง</Text>
-                    </TouchableOpacity>
+                </TouchableOpacity>
 
-        </View>
-    </SafeAreaView>
-  )
+            </View>
+        </SafeAreaView>
+    )
 }
 
 export default ModalPractice
